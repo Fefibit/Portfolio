@@ -1,107 +1,67 @@
 /* Change this file to get your personal Portfolio */
 
-// To change portfolio colors globally go to the  _globalColor.scss file
-
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation"; 
 
 // Splash Screen
-
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: true, 
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000 
 };
 
 // Summary And Greeting Section
-
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: true 
 };
 
 const greeting = {
-  username: "Michibit",
-  title: "Salve, sono Michele Menzione",
+  username: "Michele Menzione",
+  title: "Ciao, sono Michele Menzione",
   subTitle: emoji(
-    "DevOps Engineer e Sistemista 🚀 specializzato in automazione, infrastrutture e ambienti cloud scalabili."
+    "DevOps Engineer & System Administrator 🚀. Progetto infrastrutture resilienti, automatizzo pipeline CI/CD e gestisco ambienti Cloud Azure complessi."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", 
+  displayGreeting: true 
 };
 
 // Social Media Links
-
 const socialMediaLinks = {
   github: "https://github.com/Michibit",
   linkedin: "https://www.linkedin.com/in/michele-menzione-534580268/",
   gmail: "menzione.m@gmail.com",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  display: true 
 };
 
 // Skills Section
-
 const skillsSection = {
-  title: "Competenze",
+  title: "Competenze Tecniche",
   subTitle:
-    "DevOps e Sistemista appassionato di infrastrutture scalabili, automazione e performance 🔧",
+    "Full Stack DevOps con focus su High Availability, Security e Automation 🔧",
   skills: [
-    emoji("🔁 Automazione dei processi CI/CD e provisioning"),
-    emoji("🛠️ Monitoraggio, logging e ottimizzazione di ambienti complessi"),
-    emoji(
-      "🔐 Configurazione e gestione di ambienti sicuri, con controllo degli accessi e best practice di sicurezza"
-    ),
-    emoji(
-      "🧠 Esperienza su Linux, containerizzazione, orchestrazione e scripting avanzato"
-    )
+    emoji("☁️ Gestione infrastrutture Cloud (Azure) e Ibride"),
+    emoji("🐳 Containerizzazione (Docker) e Orchestrazione (Kubernetes)"),
+    emoji("🔄 Pipeline CI/CD avanzate (GitLab CI, GitHub Actions)"),
+    emoji("⚙️ Infrastructure as Code e Configuration Management (Ansible, Terraform)")
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "Windows",
-      fontAwesomeClassname: "fab fa-windows"
-    },
-    {
-      skillName: "Linux",
-      fontAwesomeClassname: "fab fa-linux"
-    },
-    {
-      skillName: "Ansible",
-      fontAwesomeClassname: "fas fa-cogs"
-    },
-    {
-      skillName: "Python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "Bash",
-      fontAwesomeClassname: "fas fa-terminal"
-    },
-    {
-      skillName: "Azure",
-      fontAwesomeClassname: "fab fa-microsoft"
-    },
-    {
-      skillName: "Kubernetes",
-      fontAwesomeClassname: "fas fa-dharmachakra"
-    },
-    {
-      skillName: "Docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+    { skillName: "Azure", fontAwesomeClassname: "fab fa-microsoft" },
+    { skillName: "Kubernetes", fontAwesomeClassname: "fas fa-dharmachakra" },
+    { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
+    { skillName: "Ansible", fontAwesomeClassname: "fas fa-cogs" },
+    { skillName: "Linux", fontAwesomeClassname: "fab fa-linux" },
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "Bash", fontAwesomeClassname: "fas fa-terminal" },
+    { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true 
 };
 
 // Education Section
-
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true, 
   schools: [
     {
       schoolName: "Università degli studi di Salerno (Unisa)",
@@ -109,243 +69,144 @@ const educationInfo = {
       subHeader: "Laurea Triennale in Informatica",
       duration: "Settembre 2021 - Marzo 2024",
       descBullets: [
-        "Sviluppo Software e Algoritmi",
-        "Sistemi Distribuiti e Cloud Computing",
-        "Sicurezza Informatica"
+        "Tesi sperimentale su architetture Cloud",
+        "Focus su Sistemi Distribuiti e Sicurezza delle Reti"
       ]
     }
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
-
+// Top Skills - Proficiency
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true, 
   experience: [
-    {
-      Stack: "Sistemi Linux/Windows", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Cloud (Azure)",
-      progressPercentage: "80%"
-    },
-    {
-      Stack: "Scripting (Python, Bash)",
-      progressPercentage: "85%"
-    },
-    {
-      Stack: "Container e Orchestrazione",
-      progressPercentage: "75%"
-    },
-    {
-      Stack: "Automazione",
-      progressPercentage: "70%"
-    }
+    { Stack: "SysAdmin (Linux/Win)", progressPercentage: "90%" },
+    { Stack: "Cloud Azure", progressPercentage: "85%" },
+    { Stack: "Scripting (Py/Bash)", progressPercentage: "85%" },
+    { Stack: "Kubernetes & Docker", progressPercentage: "75%" },
+    { Stack: "CI/CD Automation", progressPercentage: "80%" }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false 
 };
 
 // Work experience section
-
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true, 
   experience: [
     {
-      role: "Dev Ops & System Engineer",
+      role: "DevOps & System Engineer",
       company: "System Management S.p.A.",
-      companylogo: require("./assets/images/sysmanagement_logo.jpg"), // Sostituisci con il logo dell'azienda quando disponibile
+      companylogo: require("./assets/images/sysmanagement_logo.jpg"), 
       date: "Giugno 2023 - Presente",
-      desc: "Ruolo a tempo pieno con focus su gestione sistemi, DevOps e automazione in ambiente ibrido.",
+      desc: "Gestione end-to-end dell'infrastruttura aziendale e dei clienti.",
       descBullets: [
-        "Gestione Active Directory e amministrazione di sistemi",
-        "Risoluzione problemi e troubleshooting in ambienti complessi",
-        "Implementazione e manutenzione di infrastrutture IT",
-        "Automazione dei processi e CI/CD"
+        "Amministrazione domini Active Directory ibridi",
+        "Implementazione pipeline di deploy automatico",
+        "Monitoraggio proattivo dei sistemi e Incident Response",
+        "Migrazione servizi verso architetture Cloud-native"
       ]
     },
     {
       role: "R&D Engineer",
       company: "System Management S.p.A.",
-      companylogo: require("./assets/images/sysmanagement_logo.jpg"), // Sostituisci con il logo dell'azienda quando disponibile
+      companylogo: require("./assets/images/sysmanagement_logo.jpg"), 
       date: "Gennaio 2023 - Giugno 2023",
-      desc: "Ruolo part-time nel dipartimento di Ricerca e Sviluppo.",
+      desc: "Ricerca applicata su nuove tecnologie di automazione.",
       descBullets: [
-        "Sviluppo di soluzioni con Python per automazione e analisi dati",
-        "Amministrazione di sistemi Linux",
-        "Partecipazione a progetti di ricerca e innovazione",
-        "Testing e implementazione di nuove tecnologie"
+        "Sviluppo script Python per automazione task ripetitivi",
+        "Proof of Concept per integrazione sistemi legacy-cloud"
       ]
     }
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
+/* IMPORTANTE: Ho attivato questa sezione. Mostra i tuoi repo GitHub reali. */
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: false // Set false to hide this section, defaults to true
+  showGithubProfile: "true", 
+  display: true 
 };
 
-// Some big projects you have worked on
-
+// Big Projects
 const bigProjects = {
-  title: "Progetti",
-  subtitle: "Alcuni dei miei progetti e contributi significativi",
+  title: "Progetti in Evidenza",
+  subtitle: "Architetture e soluzioni deployate",
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Infrastruttura Kubernetes Multi-Cloud",
-      projectDesc:
-        "Implementazione di un cluster Kubernetes distribuito su più provider cloud per alta disponibilità e disaster recovery.",
+      projectName: "K8s Multi-Cloud Cluster",
+      projectDesc: "Cluster Kubernetes in alta disponibilità distribuito geograficamente per garantire disaster recovery e scalabilità automatica.",
       footerLink: [
         {
-          name: "Visita Repository",
-          url: "https://github.com/Michibit"
+          name: "Vedi su GitHub",
+          url: "https://github.com/Michibit" // Inserisci il link al repo specifico se esiste
         }
       ]
     },
     {
       image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Pipeline CI/CD Automatizzata",
-      projectDesc:
-        "Sistema completo di integrazione e deployment continuo con GitLab CI, TestContainers e deployment automatico.",
+      projectName: "Enterprise CI/CD Pipeline",
+      projectDesc: "Pipeline completa per il ciclo di vita del software: dai test automatici (Unit/Integration) al deploy in produzione su container.",
       footerLink: [
         {
-          name: "Visita Repository",
+          name: "Vedi su GitHub",
           url: "https://github.com/Michibit"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true 
 };
 
 // Achievement Section
-// Include certificates, talks etc
-
 const achievementSection = {
-  title: emoji("Certificazioni e Riconoscimenti 🏆 "),
-  subtitle: "Riconoscimenti, Certificazioni che ho conseguito!",
-
+  title: emoji("Certificazioni 🏆"),
+  subtitle: "Validazione continua delle competenze",
   achievementsCards: [
     {
-      title: "Microsoft Certified: Azure Administrator Associate",
-      subtitle:
-        "Riconoscimento ufficiale Microsoft per la gestione di ambienti Azure, incluse reti, identità, storage e monitoraggio.",
+      title: "Azure Administrator Associate",
+      subtitle: "Certificazione Microsoft AZ-104. Comprova competenze avanzate su gestione identità, governance, storage e reti virtuali in ambiente Azure.",
       image: require("./assets/images/azure-administrator-associate.png"),
       imageAlt: "Azure Admin Logo",
       footerLink: [
         {
-          name: "Certificazione",
+          name: "Verifica Credenziale",
           url: "https://learn.microsoft.com/api/credentials/share/it-it/MicheleMenzione-8223/D155D2D9EE7D95EE?sharingId=88BCFBE49FFCADE0"
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true 
 };
 
-// Blogs Section
+// Sezioni disabilitate per pulizia (riattivale quando hai contenuti specifici)
+const blogSection = { display: false, blogs: [] };
+const talkSection = { display: false, talks: [] };
+const podcastSection = { display: false, podcast: [] };
 
-const blogSection = {
-  title: "Blog",
-  subtitle:
-    "Condivido le mie conoscenze e esperienze attraverso articoli tecnici.",
-  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "#",
-      title: "Automazione DevOps con Ansible e Terraform",
-      description:
-        "Come ho implementato l'automazione completa dell'infrastruttura usando strumenti open source."
-    },
-    {
-      url: "#",
-      title: "Kubernetes: dall'installazione alla produzione",
-      description:
-        "Guida pratica all'implementazione di un cluster Kubernetes pronto per la produzione."
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
-
-// Talks Sections
-
-const talkSection = {
-  title: "Conferenze",
-  subtitle: emoji(
-    "Condivisione di conoscenze e partecipazione a eventi nel settore DevOps e Cloud"
-  ),
-
-  talks: [
-    {
-      title: "Best Practices per CI/CD in ambienti cloud",
-      subtitle: "Workshop presso Tech Conference 2023",
-      slides_url: "#",
-      event_url: "#"
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
-
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "Discussioni tecniche e interviste nel mondo DevOps",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/example/embed/episodes/DevOps-Best-Practices-e9givv/a-a15itvo"
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
-
-// Resume Section
 const resumeSection = {
   title: "Curriculum Vitae",
-  subtitle: "Scarica il mio CV completo per maggiori dettagli",
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
-  display: false // Set false to hide this section, defaults to true
+  subtitle: "Visualizza il mio percorso completo in formato PDF",
+  resumeLink: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
+  display: true 
 };
 
 const contactInfo = {
-  title: emoji("Contattami ☎️"),
-  subtitle:
-    "Hai un progetto da proporre o desideri metterti in contatto? Sentiti libero di scrivermi!",
-  number: "", // Lasciato vuoto intenzionalmente
+  title: emoji("Contattami 📬"),
+  subtitle: "Disponibile per consulenze su Cloud Architecture e DevOps.",
+  number: "",
   email_address: "menzione.m@gmail.com"
 };
 
-// Twitter Section
-
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: false // Set true to display this section, defaults to false
+  userName: "twitter", 
+  display: false 
 };
 
-const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; 
 
 export {
-  illustration,
-  greeting,
-  socialMediaLinks,
-  splashScreen,
-  skillsSection,
-  educationInfo,
-  techStack,
-  workExperiences,
-  openSource,
-  bigProjects,
-  achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
-  contactInfo,
-  twitterDetails,
-  isHireable,
-  resumeSection
+  illustration, greeting, socialMediaLinks, splashScreen, skillsSection,
+  educationInfo, techStack, workExperiences, openSource, bigProjects,
+  achievementSection, blogSection, talkSection, podcastSection,
+  contactInfo, twitterDetails, isHireable, resumeSection
 };
